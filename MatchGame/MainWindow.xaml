@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MatchGame"
         mc:Ignorable="d"
         Title="Find all of the matching animals" Height="450" Width="400">
-    <Grid>
+    <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -24,21 +24,17 @@
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Row="1" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Row="2" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Row="3" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Row="4" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="1" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="2" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="3" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="3" Grid.Row="2" FontSize="36"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="3" Grid.Row="3" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" Grid.Column="3" Grid.Row="4" FontSize="36"/>
     </Grid>
 </Window>

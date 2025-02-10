@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Printing;
+using System.Reflection;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +21,33 @@ namespace MatchGame
         public MainWindow()
         {
             InitializeComponent();
+            SetUpGame();
+        }
+
+        private void SetUpGame()
+        {
+            List<string> animalEmoji = new List<string>() {
+                "🐶", "🐶",
+                "🐱", "🐱",
+                "🐭", "🐭",
+                "🐹", "🐹",
+                "🐰", "🐰",
+                "🦊", "🦊",
+                "🐻", "🐻",
+                "🐼", "🐼",
+            };
+            Random random = new Random();
+            foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
+            {
+                if (textBlock.Name != "timeTextBLock")
+                {
+                    textBlock.Visibility = Visibility.Visible;
+                    int index = random.Next(animalEmoji.Count);
+                    string nextemoji = animalEmoji[index];
+                    textBlock.Text = nextemoji;
+                    animalEmoji.RemoveAt(index);
+                }
+            }
         }
     }
 }
